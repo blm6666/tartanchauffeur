@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warranty Plans - Central Motor Centre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to warranty page */
+        .warranty-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(10, 61, 145, 0.7)), url('ChatGPT Image Apr 19, 2025 at 11_03_05 AM.png');
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0 80px;
+            text-align: center;
+            color: var(--light-color);
+        }
+        
+        .warranty-header h1 {
+            color: var(--light-color);
+            margin-bottom: 20px;
+        }
+        
+        .warranty-header p {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .warranty-coverage {
+            padding: 60px 0;
+            background-color: var(--light-color);
+        }
+        
+        .coverage-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .coverage-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .coverage-list-full {
+            padding: 30px;
+            background-color: var(--gray-color);
+            border-radius: var(--card-border-radius);
+            box-shadow: var(--shadow);
+        }
+        
+        .coverage-list-full h3 {
+            margin-bottom: 20px;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+        }
+        
+        .coverage-list-full ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .coverage-list-full li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--gray-dark);
+            display: flex;
+            align-items: center;
+        }
+        
+        .coverage-list-full li:last-child {
+            border-bottom: none;
+        }
+        
+        .coverage-list-full i {
+            color: var(--primary-color);
+            margin-right: 12px;
+        }
+        
+        .compare-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 40px;
+            box-shadow: var(--shadow);
+            border-radius: var(--card-border-radius);
+            overflow: hidden;
+        }
+        
+        .compare-table th, .compare-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--gray-dark);
+        }
+        
+        .compare-table th {
+            background-color: var(--primary-color);
+            color: var(--light-color);
+        }
+        
+        .compare-table tr:nth-child(even) {
+            background-color: var(--gray-color);
+        }
+        
+        .compare-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .check-icon {
+            color: green;
+            font-size: 18px;
+        }
+        
+        .times-icon {
+            color: #d9534f;
+            font-size: 18px;
+        }
+        
+        .warranty-action {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .warranty-action .btn {
+            margin: 0 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .coverage-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<script type="text/javascript">
+var _iub = _iub || [];
+_iub.csConfiguration = {"siteId":4004985,"cookiePolicyId":49888172,"lang":"en","storage":{"useSiteId":true}};
+</script>
+<script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4004985.js"></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+<script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="IMG_2057.jpg" alt="Central Motor Centre Logo">
+            </div>
+            <nav>
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://www.motors.co.uk/dealers/cars/central-motor-centre/18368/?srsltid=AfmBOop6yrGXX3snheLtdGEZputE_5lcv4Rv7Zknfmn7AUTRMSJ1e0-8" target="_blank">Our Stock</a></li>
+                    <li><a href="warranties.html" class="active">Warranties</a></li>
+                    <li><a href="index.html#location">Find Us</a></li>
+                    <li><a href="index.html#reviews">Reviews</a></li>
+                    <li><a href="tel:01313767799" class="btn-contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Warranty Header -->
+    <section class="warranty-header">
+        <div class="container">
+            <h1>Warranty Plans</h1>
+            <p>All our vehicles come with optional comprehensive warranty options through Momentum Warranties, giving you complete peace of mind with your purchase.</p>
+        </div>
+    </section>
+
+    <!-- Warranty Plans -->
+    <section class="warranties">
+        <div class="container">
+            <h2>Our Warranty Options</h2>
+            <p class="subtitle">Choose the warranty plan that's right for you and your vehicle. All warranties are optional and can be added to any vehicle purchase.</p>
+            
+            <div class="warranty-plans">
+                <div class="plan">
+                    <h3>Plan 1</h3>
+                    <div class="plan-price">£195</div>
+                    <div class="plan-duration">3 Months</div>
+                    <p>The most advanced vehicle care program in the UK provided by Momentum Warranties.</p>
+                    <a href="#warranty-coverage" class="btn btn-primary">View Coverage Details</a>
+                </div>
+                
+                <div class="plan featured">
+                    <h3>Plan 2</h3>
+                    <div class="plan-price">£295</div>
+                    <div class="plan-duration">6 Months</div>
+                    <p>Enhanced coverage with additional components and longer protection period.</p>
+                    <a href="#warranty-coverage" class="btn btn-primary">View Coverage Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Details -->
+    <section id="warranty-coverage" class="warranty-coverage">
+        <div class="container">
+            <h2>Warranty Coverage Details</h2>
+            <p class="subtitle">Our comprehensive coverage ensures your vehicle is protected against unexpected repairs</p>
+            
+            <div class="coverage-container">                
+                <table class="compare-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Plan 1 (3 Months)</th>
+                            <th>Plan 2 (6 Months)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Price</td>
+                            <td>£195</td>
+                            <td>£295</td>
+                        </tr>
+                        <tr>
+                            <td>Duration</td>
+                            <td>3 Months</td>
+                            <td>6 Months</td>
+                        </tr>
+                        <tr>
+                            <td>Engine</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Cooling System</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Fuel System</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>4 x 4 Transfer Box</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Driveline</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Differential</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Manual Gearbox</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Automatic Gearbox</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Continuously Variable Transmission</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Torque Converter</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Propshaft/s</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Suspension And Steering</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Braking System</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Electrical System</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Casings</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Working Materials</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Diagnostics</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Electric (EV) & Hybrid Vehicle Support</td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>All Mechanical And Electrical</td>
+                            <td><i class="fas fa-times times-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Air Conditioning</td>
+                            <td><i class="fas fa-times times-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Turbo Charger</td>
+                            <td><i class="fas fa-times times-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Clutch</td>
+                            <td><i class="fas fa-times times-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Programme Costs</td>
+                            <td><i class="fas fa-times times-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Satellite Navigation System</td>
+                            <td><i class="fas fa-times times-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Multi Media / Sound System</td>
+                            <td><i class="fas fa-times times-icon"></i></td>
+                            <td><i class="fas fa-check check-icon"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <div class="warranty-action">
+                    <a href="tel:01313767799" class="btn btn-primary">Call For Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enquire Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Enquire Now</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> The Camps Industrial Estate, Kirknewton, West Lothian</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:01313767799" style="color: inherit;">0131 3767799</a></p>
+                    <p><i class="fas fa-envelope"></i> info@centralmotorcentre.co.uk</p>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-buttons">
+                    <a href="tel:01313767799" class="btn btn-primary contact-btn">
+                        <i class="fas fa-phone"></i> Call Us Now
+                    </a>
+                    <a href="https://www.motors.co.uk/dealers/cars/central-motor-centre/18368/?srsltid=AfmBOop6yrGXX3snheLtdGEZputE_5lcv4Rv7Zknfmn7AUTRMSJ1e0-8" target="_blank" class="btn btn-secondary contact-btn">
+                        <i class="fas fa-car"></i> View Our Stock
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="IMG_2057.jpg" alt="Central Motor Centre Logo">
+                    <p>Quality used cars in Kirknewton, West Lothian</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="warranties.html">Warranties</a></li>
+                        <li><a href="index.html#location">Find Us</a></li>
+                        <li><a href="index.html#reviews">Reviews</a></li>
+                        <li><a href="tel:01313767799">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3>Opening Hours</h3>
+                    <p><span class="day">Monday - Friday:</span> <span class="time">9am - 6pm</span></p>
+                    <p><span class="day">Saturday:</span> <span class="time">9am - 4pm</span></p>
+                    <p><span class="day">Sunday:</span> <span class="time">By Appointment</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Central Motor Centre. All rights reserved.</p>
+                <p>Warranty provided by <a href="https://momentumwarranties.co.uk" target="_blank">Momentum Warranties</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html> 
